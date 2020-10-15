@@ -1,10 +1,25 @@
 #Greenfoot project file
+<<<<<<< HEAD
 class.Csan.image=lobster.png
+=======
+<<<<<<< HEAD
+class.fish_A.image=fish1.png
+=======
+class.A_san.image=ant3.png
+>>>>>>> 21e4e2b1cd40fa0643bc2e24fac274c8698146bb
+>>>>>>> 626ad01bfad36850fa97b02d3f148d1074ddcf62
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 626ad01bfad36850fa97b02d3f148d1074ddcf62
 height=585
+=======
+height=579
+>>>>>>> 21e4e2b1cd40fa0643bc2e24fac274c8698146bb
 package.numDependencies=0
 package.numTargets=2
 project.charset=UTF-8
@@ -22,7 +37,15 @@ readme.x=10
 readme.y=10
 simulation.speed=50
 target1.height=50
+<<<<<<< HEAD
 target1.name=Csan
+=======
+<<<<<<< HEAD
+target1.name=fish_A
+=======
+target1.name=A_san
+>>>>>>> 21e4e2b1cd40fa0643bc2e24fac274c8698146bb
+>>>>>>> 626ad01bfad36850fa97b02d3f148d1074ddcf62
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=80
@@ -38,5 +61,10 @@ target2.y=0
 version=3.0.0
 width=825
 world.lastInstantiated=MyWorld
-xPosition=70
-yPosition=10
+<<<<<<< HEAD
+xPosition=115
+yPosition=174
+=======
+xPosition=646
+yPosition=135
+>>>>>>> 21e4e2b1cd40fa0643bc2e24fac274c8698146bb
