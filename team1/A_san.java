@@ -20,7 +20,13 @@ public class A_san extends Actor
         move(1);
     }   // Add your action code here.
 
-    if (Greenfoot.isKeyDown("up")){
+    int x = getX();
+    int y = getY();
+        if( Greenfoot.isKeyDown( "down" ) ){
+        setLocation( x,y+1 );
+    }
+
+        if (Greenfoot.isKeyDown("up")){
             setRotation(-90);
             move(1);
         }// Add your action code here.
