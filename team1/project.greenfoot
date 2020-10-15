@@ -1,10 +1,18 @@
 #Greenfoot project file
+<<<<<<< HEAD
 class.fish_A.image=fish1.png
+=======
+class.A_san.image=ant3.png
+>>>>>>> 21e4e2b1cd40fa0643bc2e24fac274c8698146bb
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
+<<<<<<< HEAD
 height=585
+=======
+height=579
+>>>>>>> 21e4e2b1cd40fa0643bc2e24fac274c8698146bb
 package.numDependencies=0
 package.numTargets=2
 project.charset=UTF-8
@@ -22,7 +30,11 @@ readme.x=10
 readme.y=10
 simulation.speed=50
 target1.height=50
+<<<<<<< HEAD
 target1.name=fish_A
+=======
+target1.name=A_san
+>>>>>>> 21e4e2b1cd40fa0643bc2e24fac274c8698146bb
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=80
@@ -38,5 +50,10 @@ target2.y=0
 version=3.0.0
 width=825
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
 xPosition=115
 yPosition=174
+=======
+xPosition=646
+yPosition=135
+>>>>>>> 21e4e2b1cd40fa0643bc2e24fac274c8698146bb
