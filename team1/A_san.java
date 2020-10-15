@@ -14,9 +14,16 @@ public class A_san extends Actor
      */
     public void act() 
     {
-        if( Greenfoot.isKeyDown( "left" ) ){
+
+        if( Greenfoot.isKeyDown("left")){
         setRotation(180);
         move(1);
     }   // Add your action code here.
+
+    if (Greenfoot.isKeyDown("up")){
+            setRotation(-90);
+            move(1);
+        }// Add your action code here.
+
     }    
 }
