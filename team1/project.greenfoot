@@ -5,8 +5,13 @@ class.D.image=man01.png
 class.fish_A.image=fish1.png
 editor.fx.0.height=739
 editor.fx.0.width=816
+<<<<<<< HEAD
 editor.fx.0.x=1067
 editor.fx.0.y=557
+=======
+editor.fx.0.x=722
+editor.fx.0.y=112
+>>>>>>> f7390d97391e10ed56f77c0664ac9b335e3ec628
 height=579
 package.numDependencies=0
 package.numTargets=5
@@ -62,5 +67,10 @@ target5.y=0
 version=3.0.0
 width=825
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
 xPosition=130
 yPosition=147
+=======
+xPosition=501
+yPosition=196
+>>>>>>> f7390d97391e10ed56f77c0664ac9b335e3ec628
