@@ -15,5 +15,10 @@ public class A_san extends Actor
     public void act() 
     {
         // Add your action code here.
+    int x = getX();
+    int y = getY();
+        if( Greenfoot.isKeyDown( "down" ) ){
+        setLocation( x,y+1 );
+    }
     }    
 }
