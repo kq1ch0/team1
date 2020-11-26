@@ -13,15 +13,18 @@ public class player extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     //player height 200px
-    int jumpPower    = -15; //ジャンプ力
-    int gravityPower =   1; //重力1
+    int jumpPower    = -20; //ジャンプ力
+    int gravityPower =   1; //重力
     int groundY      = 600; //地面のY座標
-    int jumpVarMax   =   3; //最大ジャンプ回数
+    int jumpVarMax   =   2; //最大ジャンプ回数
     //int jumpFlex   =  10;
     
     int spdY         =   0; //プレイヤーのY軸速度
     int isPress      =   0; //ボタン押下フラグ
     int jumpVar      = jumpVarMax; //ジャンプ回数カウンタ
+    int stepFlag     = 0;
+    static int posX         = 0;
+    static int posY         = 0;
     
     public void act() 
     {
@@ -37,10 +40,23 @@ public class player extends Actor
         
         setLocation(getX(),getY()+spdY);
         spdY += gravityPower;
-        
         if (getY() > groundY){
             setLocation(getX(),600);
             jumpVar = jumpVarMax;
         }
-    }    
+        
+        if (jumpVar == jumpVarMax){
+            if (stepFlag == 0){
+                setLocation(getX()+5,getY());
+                stepFlag = 1;
+            }else if (stepFlag == 1){
+                setLocation(getX()-5,getY());
+                stepFlag = 0;
+            }
+        }
+        
+        
+        posX = getX();
+        posY = getY();
+    }
 }
