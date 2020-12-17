@@ -20,6 +20,7 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
+    int player_hp = 3;
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -30,7 +31,7 @@ public class MyWorld extends World
         //addObject(new test2(), 1500, 300);
         //addObject(new bg(), 1500, 400);
         //addObject(new bg(), 100, 400);
-        addObject(new man(), 300, 710);
+        //addObject(new man(), 300, 710);
 
         Timer timer = new Timer();
         TimerTask task = new TimerTask(){
@@ -50,6 +51,12 @@ public class MyWorld extends World
         };
         
         
-        timer.schedule(task, 2000, 2000);
+        timer.schedule(task, 1000, 2000);
+        
+        addObject(new player(),400,600);
+        addObject(new player_foot(),400,650);
+        //addObject(new maku_test(),100,400);
+        //addObject(new maku_test(),1500,400);
+
     }
 }
