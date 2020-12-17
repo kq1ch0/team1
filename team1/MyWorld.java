@@ -19,7 +19,7 @@ public class MyWorld extends World
         super(1600, 800, 1); 
         addObject(new player(),400,600);
         addObject(new player_foot(),400,650);
-        addObject(new maku_test(),100,400);
-        addObject(new maku_test(),1500,400);
+        //addObject(new maku_test(),100,400);
+        //addObject(new maku_test(),1500,400);
     }
 }

@@ -28,8 +28,14 @@ public class player extends Actor
     static int posX         = 0;
     static int posY         = 0;
     
+    
+    
     public void act() 
     {
+        if (jumpVar == jumpVarMax){
+            getWorld().addObject(new sandstorm(),getX()-180,getY());
+            getWorld().addObject(new sandstorm_mini(),getX()-180,getY());
+        }
         // Add your action code here.
         //-----ジャンプボタン処理-----
         if (Greenfoot.isKeyDown("space") && isPress==0 && jumpVar>0){
@@ -39,6 +45,9 @@ public class player extends Actor
         }
         if (!Greenfoot.isKeyDown("space")){
             isPress=0;
+        }
+        if (Greenfoot.isKeyDown("enter")){
+            getWorld().addObject(new bullet_test(),getX(),getY());
         }
         
         //-----プレイヤー移動-----
