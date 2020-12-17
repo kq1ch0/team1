@@ -14,6 +14,6 @@ public class sandstorm extends Actor
      */
     public void act() 
     {
-        getWorld().removeObject(this);
+        if (player.ssFlag == 0)getWorld().removeObject(this);
     }    
 }
