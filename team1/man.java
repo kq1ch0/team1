@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class D here.
+ * Write a description of class man here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class D extends Actor
+public class man extends Actor
 {
     /**
-     * Act - do whatever the D wants to do. This method is called whenever
+     * Act - do whatever the man wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
@@ -35,6 +35,6 @@ public class D extends Actor
         if( actor != null){
             // TARO とぶつかった時の処理を書く
             getWorld().showText( "Hit", 100, 100 );
-        }  
+        }
     }    
 }
