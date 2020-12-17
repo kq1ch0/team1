@@ -14,6 +14,9 @@ public class sandstorm extends Actor
      */
     public void act() 
     {
-        if (player.ssFlag == 0)getWorld().removeObject(this);
+        if (player.ssFlag == 0){
+            setLocation(getX()-8,getY());
+            if (getX() < 10)getWorld().removeObject(this);
+        }
     }    
 }

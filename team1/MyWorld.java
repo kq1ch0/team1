@@ -51,7 +51,7 @@ public class MyWorld extends World
         };
         
         
-        timer.schedule(task, 1000, 2000);
+        timer.schedule(task, 0, 1000);
         
         addObject(new player(),400,600);
         addObject(new player_foot(),400,650);

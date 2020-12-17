@@ -18,7 +18,7 @@ public class test extends Actor
         int x = getX();
         int y = getY();
         
-        setLocation(x-3,y);
+        setLocation(x-8,y);
         if(x == 0){
             getWorld().removeObject(this);
           
