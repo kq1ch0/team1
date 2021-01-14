@@ -1,12 +1,14 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.List;
+import java.util.ArrayList;
 /**
  * Write a description of class player here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class player extends Actor
+public class player extends Collision
 {
     /**
      * Act - do whatever the player wants to do. This method is called whenever
@@ -19,20 +21,21 @@ public class player extends Actor
     int jumpVarMax   =   2; //最大ジャンプ回数
     int vibrationValue = 2; //プレイヤー振動の量
     int ssminiFlagMax  = 15; //砂埃の頻度
+    int ignoreDamageTimeMax = 50; //ダメージ無敵時間
     //int jumpFlex   =  10;
     
     int spdY         =   0; //プレイヤーのY軸速度
     int isPress      =   0; //ボタン押下フラグ
     int jumpVar      = jumpVarMax; //ジャンプ回数カウンタ
     int stepFlag     = 0;   //プレイヤーのブラー処理フラグ
+    int ignoreDamageTime = 0;
+    static int playerHealth = 3;
     
     static int ssFlag = 0;
     int ssminiFlag   = ssminiFlagMax;
     
     static int posX         = 0;
     static int posY         = 0;
-    
-    
     
     public void act() 
     {
@@ -73,7 +76,7 @@ public class player extends Actor
             jumpVar = jumpVarMax;
         }
         
-        //-----プレイヤーに走行中のブラーをかける処理-----
+        //-----プレイヤーに走行中の揺れをかける処理-----
         if (jumpVar == jumpVarMax){
             if (stepFlag == 0){
                 setLocation(getX()+vibrationValue,getY());
@@ -83,9 +86,29 @@ public class player extends Actor
                 stepFlag = 0;
             }
         }
+    
         
         //-----player_footに渡す座標の指定-----
         posX = getX();
         posY = getY();
+        
+        if ((touch(test.class) || touch(test2.class)) && ignoreDamageTime == 0){
+            ignoreDamageTime = ignoreDamageTimeMax;
+            playerHealth--;
+        }
+        /*
+        Actor actor = getOneIntersectingObject( test.class );
+        if( actor != null && ignoreDamageTime == 0){
+            
+        }
+        */
+        if (ignoreDamageTime > 0)ignoreDamageTime--;
+        
     }
+    public static int getHealth(){
+        return playerHealth;
+    }
+    
+    /** This method is a pixel perfect collision detection. Return, if it intersects an actor of the given class */
+    
 }
