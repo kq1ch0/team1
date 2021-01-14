@@ -25,28 +25,45 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1600, 800, 1); 
-        //addObject(new test(), 1500, 90);
-        //addObject(new test(), 1500, 400);
-        //addObject(new test(), 1500, 710);
-        //addObject(new test2(), 1500, 300);
-        //addObject(new bg(), 1500, 400);
-        //addObject(new bg(), 100, 400);
-        //addObject(new man(), 300, 710);
 
         Timer timer = new Timer();
         TimerTask task = new TimerTask(){
             public void run(){
                 Random random = new Random();
-                int randomValue = random.nextInt(3);
+                int randomValue = random.nextInt(10);
                 
                 switch (randomValue){
                     case 0:
-                        addObject(new test(), 1600, 700);
+                        addObject(new inemuri(), 1600, 700);
                         break;
                     case 1:
-                        addObject(new test2(), 1600, 400);
+                        addObject(new test0(), 1600, 400);
+                        break;
+                    case 2:
+                        addObject(new walkingman(), 1600, 700);
+                        break;
+                    case 3:
+                        addObject(new cardgame(), 1600, 700);
+                        break;
+                    case 4:
+                        addObject(new grass(), 1600, 400);
+                        break;
+                    case 5:
+                        addObject(new omocha_game(), 1600, 400);
+                        break;
+                    case 6:
+                        addObject(new ma_jan_pai(), 1600, 400);
+                        break;
+                    case 7:
+                        addObject(new test100(), 1600, 100);
+                        break;
+                    case 8:
+                        addObject(new dentaku(), 1600, 100);
+                        break;
+                    case 9:
+                        addObject(new energy(), 1600, 100);
+                        break;
                 }
-                
             }
         };
         

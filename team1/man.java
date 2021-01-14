@@ -30,8 +30,8 @@ public class man extends Actor
            setLocation( x,y+4 );
         }
         
-        Actor actor = getOneIntersectingObject( test.class );
-        actor = getOneIntersectingObject( test2.class );
+        Actor actor = getOneIntersectingObject( inemuri.class );
+        actor = getOneIntersectingObject( test0.class );
         if( actor != null){
             // TARO とぶつかった時の処理を書く
             getWorld().showText( "Hit", 100, 100 );

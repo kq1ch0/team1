@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class test here.
+ * Write a description of class omocha_game here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class test extends Actor
+public class omocha_game extends Actor
 {
     /**
-     * Act - do whatever the test wants to do. This method is called whenever
+     * Act - do whatever the omocha_game wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
@@ -18,10 +18,10 @@ public class test extends Actor
         int x = getX();
         int y = getY();
         
-        setLocation(x-3,y);
+        setLocation(x-8,y);
         if(x == 0){
             getWorld().removeObject(this);
           
         }
-    }
+    }    
 }
